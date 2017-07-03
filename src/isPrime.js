@@ -14,11 +14,11 @@ getPrimes(n) {
 	 else if (n=== 3){
 	    primeArray.push(2, 3);
 	  }
-	  else                                     {
+	  else {
 	    primeArray.push(2, 3, 5);
 	  }
 	
-	  for (let i = 2; i<=n; i++){
+	  for (let i = 2; i<n; i++){
 	    if (i % 2 !== 0 && i % 3 !==0 && i% 5 !== 0 && Math.sqrt(i) % 1 !== 0){
 		  primeArray.push(i);
 		   }
